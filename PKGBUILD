@@ -16,7 +16,6 @@ optdepends=("tar: needed in order to create world backups"
 	"netcat: required in order to suspend an idle server")
 provides=("minecraft-server=${_pkgver%_*}" "spigot=${_pkgver%_*}")
 backup=('etc/conf.d/cuberite')
-install="${pkgname}.install"
 options=('!debug' 'strip')
 source=("git+https://github.com/cuberite/cuberite#commit=${_commit}"
 	"git+https://github.com/cuberite/Core"
